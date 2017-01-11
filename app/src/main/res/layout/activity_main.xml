@@ -11,7 +11,43 @@
     tools:context="app.highaltitudeballoonproject.MainActivity">
 
     <TextView
+        android:text="Photo Resolution"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/photoResLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Time Between Photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeBetwennLable"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/photoResLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/timeBetwennLable"
+        android:layout_alignParentStart="true"
+        android:id="@+id/timeTextEdit"
+        android:layout_alignParentEnd="true"
+        android:selectAllOnFocus="false"
+        android:singleLine="true" />
+
+    <Button
+        android:text="Start application"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/startButton" />
 </RelativeLayout>
